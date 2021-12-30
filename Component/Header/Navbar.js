@@ -15,6 +15,7 @@ const Navbar = () => {
                         <a className="mr-5 hover:text-white">Blog</a>
                         <a className="mr-5 hover:text-white">Post</a>
                         <a className="mr-5 hover:text-white">Shop</a>
+                        <a className="mr-5 hover:text-white">Profile</a>
                     </nav>
                     {
                         user.email ? <div className='flex'>
