@@ -62,7 +62,7 @@ const index = ({ data }) => {
                 <div className="flex justify-between items-center">
                   <h1 className="text-2xl font-bold text-black my-5">Populer This Week</h1>
                   <div>
-                    <button className="border py-2 px-4"><Link href="/post" >See All</Link></button>
+                    <button className="border py-2 px-4"><Link href="/blog" >See All</Link></button>
                   </div>
                 </div>
                 <div className="flex flex-wrap -m-4">

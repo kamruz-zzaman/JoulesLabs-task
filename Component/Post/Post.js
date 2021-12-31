@@ -6,8 +6,8 @@ const Post = ({ post }) => {
     const { id, title, body } = post;
     return (
         <>
-            <Link href={`/Blogs/${id}`} passHref>
-                <div className="p-4 md:w-1/3">
+            <Link href={`/${id}`} passHref>
+                <div className="p-4 md:w-1/3 cursor-pointer">
                     <div className="h-full p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                         <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/7ShKJWZ/Concept-of-an-open-magic-book-open-pages-with-water-and-land-and-small-child-Fantasy-nature-or-learn.jpg" alt="blog" />
                         <div className="py-6">

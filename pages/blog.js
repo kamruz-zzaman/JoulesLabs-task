@@ -1,10 +1,9 @@
 import React from 'react';
-import Footer from '../../Component/Footer/Footer';
-import Navbar from '../../Component/Header/Navbar';
-import Login from '../../Component/Login/Login';
-import Post from '../../Component/Post/Post';
-
-import useAuth from '../../Hooks/useAuth';
+import Footer from '../Component/Footer/Footer';
+import Navbar from '../Component/Header/Navbar';
+import Login from '../Component/Login/Login';
+import Post from '../Component/Post/Post';
+import useAuth from '../Hooks/useAuth';
 
 const blog = ({ data }) => {
     const { user } = useAuth();
