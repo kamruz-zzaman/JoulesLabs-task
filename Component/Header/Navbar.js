@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 import useAuth from '../../Hooks/useAuth';
 import logo from '../../Images/company_logo.png'
@@ -15,7 +16,7 @@ const Navbar = () => {
                         <a className="mr-5 hover:text-white">Blog</a>
                         <a className="mr-5 hover:text-white">Post</a>
                         <a className="mr-5 hover:text-white">Shop</a>
-                        <a className="mr-5 hover:text-white">Profile</a>
+                        <Link href="/profile" className="mr-5 hover:text-white">Profile</Link>
                     </nav>
                     {
                         user.email ? <div className='flex'>
