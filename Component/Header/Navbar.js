@@ -7,16 +7,26 @@ const Navbar = () => {
     const { user, logOut } = useAuth();
     return (
         <>
-            <header className="text-gray-400 bg-gray-900 body-font">
+            <header className="text-black border drop-shadow-2xl body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-                    <a className="flex title-font font-medium items-center text-xl text-white mb-4 md:mb-0">
+                    <a className="flex title-font font-medium items-center text-xl mb-4 md:mb-0">
                         <Image width='50px' height="50px" src={logo} alt="" />JoulesLabs</a>
                     <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-                        <a className="mr-5 hover:text-white">Home</a>
-                        <a className="mr-5 hover:text-white">Blog</a>
-                        <a className="mr-5 hover:text-white">Post</a>
-                        <a className="mr-5 hover:text-white">Shop</a>
-                        <Link href="/profile" className="mr-5 hover:text-white">Profile</Link>
+                        <div className=' mr-5'>
+                            <Link href="/" className="mr-5 hover:text-gray-700">Home</Link>
+                        </div>
+                        <div className=' mr-5'>
+                            <Link href="" className="mr-5 hover:text-gray-700">Blog</Link>
+                        </div>
+                        <div className=' mr-5'>
+                            <Link href="/post" className="mr-5 hover:text-gray-700">Post</Link>
+                        </div>
+                        <div className=' mr-5'>
+                            <Link href="" className="mr-5 hover:text-gray-700">Shop</Link>
+                        </div>
+                        <div className=' mr-5'>
+                            <Link href="/profile" className="mr-5 hover:text-gray-700">Profile</Link>
+                        </div>
                     </nav>
                     {
                         user.email ? <div className='flex'>

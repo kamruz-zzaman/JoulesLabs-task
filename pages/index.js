@@ -22,7 +22,7 @@ export default function Home() {
                 <input type="text" id="footer-field" name="footer-field" className="w-1/2  border-2  text-base outline-none text-gray-900 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                 <button className="mx-5  lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 ">Subscribe</button></div>
             </div>
-            <div className='w-1/2'>
+            <div className='w-1/2 mt-5'>
               <Image src={profile} className='mt-10 -mb-5' alt="" />
             </div>
           </div>
