@@ -1,7 +1,9 @@
 import React from 'react';
+import useAuth from '../../Hooks/useAuth';
 
 const Shop = ({ products, buttonHandle }) => {
     const { title, price, image, category, description } = products;
+    const { AddHandler } = useAuth();
     return (
         <>
 
@@ -18,7 +20,7 @@ const Shop = ({ products, buttonHandle }) => {
                             <p className="text-gray-400 mr-3 inline-flex items-center  leading-none text-sm pr-3 py-1 ">
                                 <p className='fon font-bold'>${price}</p>
                             </p>
-                            <button onClick={() => buttonHandle(products)} className='border bg-violet-600 text-white py-1 px-3 rounded hover:bg-violet-700'>Add to Cart</button>
+                            <button onClick={() => AddHandler(products)} className='border bg-violet-600 text-white py-1 px-3 rounded hover:bg-violet-700'>Add to Cart</button>
                         </div>
                     </div>
                 </div>

@@ -12,7 +12,7 @@ const useFirebase = () => {
     firebaseAuthInit();
     const auth = getAuth();
     const [user, setUser] = useState({});
-
+    const [cart, setCart] = useState([])
     const [isLoading, setIsLoading] = useState(true);
 
     // User Login With Google
@@ -48,11 +48,17 @@ const useFirebase = () => {
         });
         return () => unsubscribe;
     }, []);
+    const AddHandler = (teamBtn) => {
+        const newCart = [...cart, teamBtn]
+        setCart(newCart);
+    }
     return {
         user,
         signinWithGoogle,
         logOut,
-        isLoading
+        isLoading,
+        AddHandler,
+        cart
     };
 };
 
