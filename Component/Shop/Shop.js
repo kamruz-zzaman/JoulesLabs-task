@@ -1,7 +1,7 @@
 import React from 'react';
 import useAuth from '../../Hooks/useAuth';
 
-const Shop = ({ products, buttonHandle }) => {
+const Shop = ({ products }) => {
     const { title, price, image, category, description } = products;
     const { AddHandler } = useAuth();
     return (

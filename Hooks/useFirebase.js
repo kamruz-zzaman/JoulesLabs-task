@@ -52,13 +52,21 @@ const useFirebase = () => {
         const newCart = [...cart, teamBtn]
         setCart(newCart);
     }
+    let total = 0;
+    // looping card data
+    for (const carts of cart) {
+        const { price } = carts;
+        total = Math.round(total + price);
+
+    }
     return {
         user,
         signinWithGoogle,
         logOut,
         isLoading,
         AddHandler,
-        cart
+        cart,
+        total
     };
 };
 
