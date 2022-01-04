@@ -7,7 +7,6 @@ import useAuth from '../../Hooks/useAuth';
 
 const Cart = () => {
     const { cart, total } = useAuth();
-    console.log(cart);
     return (
         <>
             <h1 className='text-center text-2xl font-bold  '>Cart</h1>

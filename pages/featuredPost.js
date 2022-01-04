@@ -3,7 +3,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const Slide = ({ data }) => {
-    console.log(data);
     return (
         <div>
             dfhgdrfzrhgds

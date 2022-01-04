@@ -28,7 +28,6 @@ const CheckoutForm = () => {
             .then(data => setClientSecret(data.clientSecret));
     }, []);
 
-    console.log(clientSecret);
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!stripe || !elements) {
@@ -70,7 +69,7 @@ const CheckoutForm = () => {
 
         if (intentError) {
             setError(intentError.message);
-            setSuccess('');
+            // setSuccess('');
         }
         else {
             setError('');
@@ -83,7 +82,7 @@ const CheckoutForm = () => {
             {
                 user.email ? <>
                     <form onSubmit={handleSubmit} className='w-1/2 border mx-auto text-white my-10 p-10'>
-                        <h1 className='text-black dark:text-gray-50 text-center mb-5 text-2xl font-bold'>Pay: ${total}</h1>
+                        <h1 className='text-black dark:text-gray-50 text-center mb-5 text-2xl font-bold'>Pay: ${total} With Stripe</h1>
                         <CardElement className="border py-2 rounded px-5 dark:bg-gray-900 "
                             options={{
                                 style: {
