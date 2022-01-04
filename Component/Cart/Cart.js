@@ -13,7 +13,13 @@ const Cart = () => {
                 <p className='font-bold'>Total Added Product: {cart.length}</p>
                 <p className='font-bold'>Total: ${total}</p>
                 <div className='flex justify-center items-center mt-2 '>
-                    <Link href="/checkout" passHref><button className='bg-violet-600  text-white py-1 px-3 rounded hover:bg-violet-700'>CheckOut</button></Link>
+                    {
+                        total === 0 ?
+                            <button className='bg-violet-600  text-white py-1 px-3 rounded hover:bg-violet-700' disabled={true}>CheckOut</button> :
+                            <Link href="/checkout" passHref><button className='bg-violet-600  text-white py-1 px-3 rounded hover:bg-violet-700'>CheckOut</button></Link>
+                    }
+
+
                 </div>
             </div>
         </>
