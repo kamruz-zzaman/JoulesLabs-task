@@ -14,6 +14,9 @@ function MyApp({ Component, pageProps }) {
   })
   return (
     <>
+      {loading && <div className="h-screen text-center my-80">
+        <p className="text-2xl">Loading.............</p>
+      </div>}
       <AuthProvider>
         <ThemeProvider enableSystem={true} attribute='class'>
           <Component {...pageProps} />
