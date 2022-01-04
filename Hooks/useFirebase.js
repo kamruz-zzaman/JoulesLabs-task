@@ -23,6 +23,7 @@ const useFirebase = () => {
             .catch((err) => console.log(err))
             .finally(() => {
                 window.location.reload();
+                setIsLoading(false)
             });
 
     };
@@ -34,6 +35,7 @@ const useFirebase = () => {
                 setUser({});
             })
             .catch((error) => { alert(error.message) })
+            .finally(() => setIsLoading(false));
     };
 
     // User Observer

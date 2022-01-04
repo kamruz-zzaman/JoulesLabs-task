@@ -85,8 +85,8 @@ const CheckoutForm = () => {
 
                     <Navbar></Navbar>
                     <form onSubmit={handleSubmit} className='w-1/2 border mx-auto text-white my-10 p-10'>
-                        <h1 className='text-black text-center mb-5 text-2xl font-bold'>Pay: ${total}</h1>
-                        <CardElement className="border py-2 rounded px-5"
+                        <h1 className='text-black dark:text-gray-50 text-center mb-5 text-2xl font-bold'>Pay: ${total}</h1>
+                        <CardElement className="border py-2 rounded px-5 dark:bg-gray-900 "
                             options={{
                                 style: {
                                     base: {

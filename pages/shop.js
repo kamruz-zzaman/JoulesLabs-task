@@ -7,7 +7,14 @@ import Shop from '../Component/Shop/Shop';
 import useAuth from '../Hooks/useAuth';
 
 const shop = ({ data }) => {
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
+    if (isLoading) {
+        return (
+            <div className="h-screen text-center my-80">
+                <p className="text-2xl">Loading.............</p>
+            </div>
+        )
+    }
     return (
         <>
             {

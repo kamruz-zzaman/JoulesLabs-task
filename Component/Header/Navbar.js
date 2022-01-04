@@ -42,7 +42,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <header className="text-black dark:text-white border drop-shadow-2xl body-font">
+            <header className="text-black bg-gray-100 dark:text-white dark:bg-gray-900 drop-shadow-2xl body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-xl mb-4 md:mb-0">
                         <Image width='50px' height="50px" src={logo} alt="" />JoulesLabs</a>
