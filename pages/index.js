@@ -109,9 +109,25 @@ const index = ({ data }) => {
 
                 </section>
               }
+              {
+                <section className="flex justify-between items-center container w-11/12 mb-10 mx-auto px-20 py-10  bg-gray-200 border-t dark:border-gray-800 dark:bg-gray-900 border">
+                  <div className="flex justify-center items-center">
+                    <img height="75px" width="75px" className="border rounded-full mr-5" src="https://i.ibb.co/hRp0W87/istockphoto-1168518509-612x612-removebg-preview.png" alt="" />
+                    <h1 className="text-xl font-bold" >Join the news later and read <br /> the news post first!</h1>
+
+                  </div>
+                  <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
+                    <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
+                      <input type="text" id="footer-field" name="footer-field" className="w-full rounded border bg-opacity-40 border-gray-700 bg-transparent focus:ring-2 focus:ring-indigo-900 focus:border-indigo-500 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Email" />
+                    </div>
+                    <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Subscribe</button>
+                  </div>
+                </section>
+              }
 
               <Footer></Footer></> : <Login></Login>
           }
+
         </>}
     </>
   );
