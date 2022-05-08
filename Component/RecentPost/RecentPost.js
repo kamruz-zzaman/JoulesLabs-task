@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import React from 'react';
 
 const RecentPost = ({ post }) => {
@@ -7,7 +6,7 @@ const RecentPost = ({ post }) => {
         <>
             <div className="border p-2 flex justify-center items-center">
                 <div className="w-full h-full p-2">
-                    <Image src="https://i.ibb.co/qFkhKW3/download.jpg" alt="" />
+                    <img src="https://i.ibb.co/qFkhKW3/download.jpg" alt="" />
                 </div>
                 <div>
                     <div className="p-2">

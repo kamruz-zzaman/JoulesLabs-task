@@ -1,4 +1,3 @@
-import Image from "next/Image ";
 import profile from '../../Images/profile.png'
 
 import React from 'react';
@@ -41,7 +40,7 @@ const Index = ({ data }) => {
                                                 <button className="mx-5  lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 ">Subscribe</button></div>
                                         </div>
                                         <div className='w-1/2 mt-10'>
-                                            <Image src={profile} className='mt-10 -mb-5' alt="" />
+                                            <img src={profile} className='mt-10 -mb-5' alt="" />
                                         </div>
                                     </div>
                                 </div>
@@ -53,8 +52,8 @@ const Index = ({ data }) => {
                                         <div className="flex justify-between items-center">
                                             <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-50  my-5">Featerd Post</h1>
                                             <div>
-                                                <button><Image className="bg-blue-500 rounded-full p-1 mx-1" src="https://i.ibb.co/v1zwLqs/Arrow-2-1.png" alt="" /></button>
-                                                <button><Image className="bg-blue-500 rounded-full p-1 mx-1" src="https://i.ibb.co/gvNk8Gc/Arrow-2.png" alt="" /></button>
+                                                <button><img className="bg-blue-500 rounded-full p-1 mx-1" src="https://i.ibb.co/v1zwLqs/Arrow-2-1.png" alt="" /></button>
+                                                <button><img className="bg-blue-500 rounded-full p-1 mx-1" src="https://i.ibb.co/gvNk8Gc/Arrow-2.png" alt="" /></button>
                                             </div>
                                         </div>
                                         <div className="flex flex-wrap -m-4">
@@ -112,7 +111,7 @@ const Index = ({ data }) => {
                             {
                                 <section className="flex justify-between items-center container w-11/12 mb-10 mx-auto px-20 py-10  bg-gray-200 border-t dark:border-gray-800 dark:bg-gray-900 border">
                                     <div className="flex justify-center items-center">
-                                        <Image height="75px" width="75px" className="border rounded-full mr-5" src="https://i.ibb.co/hRp0W87/istockphoto-1168518509-612x612-removebg-preview.png" alt="" />
+                                        <img height="75px" width="75px" className="border rounded-full mr-5" src="https://i.ibb.co/hRp0W87/istockphoto-1168518509-612x612-removebg-preview.png" alt="" />
                                         <h1 className="text-xl font-bold" >Join the news later and read <br /> the news post first!</h1>
 
                                     </div>
@@ -134,10 +133,3 @@ const Index = ({ data }) => {
 };
 
 export default Index;
-export async function getStaticProps() {
-    const res = await fetch(`https://jsonplaceholder.typicode.com/posts/`)
-    const data = await res.json();
-    return {
-        props: { data }
-    }
-}

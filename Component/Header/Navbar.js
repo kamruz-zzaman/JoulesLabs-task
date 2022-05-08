@@ -1,9 +1,8 @@
 import { useTheme } from 'next-themes';
-import Image from 'next/Image ';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../Hooks/useAuth';
-import logo from '../../Image s/company_logo.png'
+import logo from '../../Images/company_logo.png'
 import MoonIcon from '../HeroIcons/MoonIcon';
 import SunIcon from '../HeroIcons/SunIcon';
 const Navbar = () => {
@@ -45,7 +44,7 @@ const Navbar = () => {
             <header className="text-black bg-gray-100 dark:text-white dark:bg-gray-900 drop-shadow-2xl body-font">
                 <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                     <a className="flex title-font font-medium items-center text-xl mb-4 md:mb-0">
-                        <Image width='50px' height="50px" src={logo} alt="" />JoulesLabs</a>
+                        <img width='50px' height="50px" src={logo} alt="" />JoulesLabs</a>
 
                     <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
                         <div className=' mr-5'>
