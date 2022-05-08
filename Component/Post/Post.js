@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -9,7 +10,7 @@ const Post = ({ post }) => {
 
             <div className="p-4 md:w-1/3">
                 <div className="h-full p-4 border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                    <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/7ShKJWZ/Concept-of-an-open-magic-book-open-pages-with-water-and-land-and-small-child-Fantasy-nature-or-learn.jpg" alt="blog" />
+                    <Image className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ibb.co/7ShKJWZ/Concept-of-an-open-magic-book-open-pages-with-water-and-land-and-small-child-Fantasy-nature-or-learn.jpg" alt="blog" />
                     <div className="py-6">
                         <h1 className="title-font text-lg font-medium text-gray-900 dark:text-gray-50 mb-3">{title.slice(0, 20)}</h1>
                         <p className="leading-relaxed mb-3 dark:text-gray-50">{body.slice(0, 100)}...</p>

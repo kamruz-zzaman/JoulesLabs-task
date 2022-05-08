@@ -1,9 +1,9 @@
 import { useTheme } from 'next-themes';
-import Image from 'next/image';
+import Image from 'next/Image ';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../Hooks/useAuth';
-import logo from '../../Images/company_logo.png'
+import logo from '../../Image s/company_logo.png'
 import MoonIcon from '../HeroIcons/MoonIcon';
 import SunIcon from '../HeroIcons/SunIcon';
 const Navbar = () => {

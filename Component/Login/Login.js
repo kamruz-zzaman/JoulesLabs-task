@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image from 'next/Image ';
 import React from 'react';
-import logo from '../../Images/company_logo.png'
-import googleLogo from '../../Images/google-logo.png'
+import logo from '../../Image s/company_logo.png'
+import googleLogo from '../../Image s/google-logo.png'
 import useAuth from '../../Hooks/useAuth';
 const Login = () => {
     const { signinWithGoogle, user } = useAuth();
